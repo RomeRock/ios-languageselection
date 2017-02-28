@@ -13,7 +13,7 @@ class LanguageTableViewController: UITableViewController {
     
     var languages = [Language]()
     
-    @IBOutlet var languageTitleLabel: UILabel!
+    var titleLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -22,6 +22,16 @@ class LanguageTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        
+        titleLabel = UILabel()
+        titleLabel.backgroundColor = UIColor.clear
+        titleLabel.font = UIFont.boldSystemFont(ofSize: 17)
+        titleLabel.textAlignment = .center
+        titleLabel.textColor = UIColor.white
+        titleLabel.text = "SELECT_LANG".localized()
+        titleLabel.sizeToFit()
+        self.navigationItem.titleView = titleLabel
+        
         setLanguage()
         
         NotificationCenter.default.addObserver(self, selector: #selector(LanguageTableViewController.setLanguage), name: .updateLanguage, object: nil)
@@ -33,7 +43,8 @@ class LanguageTableViewController: UITableViewController {
     }
     
     func setLanguage() {
-        languageTitleLabel.text = "SELECT_LANG".localized()
+        titleLabel.text = "SELECT_LANG".localized()
+        titleLabel.sizeToFit()
     }
 
     @IBAction func backPressed(_ sender: Any) {

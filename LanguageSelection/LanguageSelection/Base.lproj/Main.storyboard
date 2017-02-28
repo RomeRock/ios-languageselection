@@ -392,29 +392,7 @@
                                 <action selector="backPressed:" destination="tl5-Ur-gEQ" id="cjt-qi-uun"/>
                             </connections>
                         </barButtonItem>
-                        <view key="titleView" contentMode="scaleToFill" id="aMZ-lq-7mG">
-                            <rect key="frame" x="62" y="6" width="252" height="33"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select language" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eaN-gS-WVn">
-                                    <rect key="frame" x="0.0" y="0.0" width="252" height="33"/>
-                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
-                            </subviews>
-                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                            <constraints>
-                                <constraint firstItem="eaN-gS-WVn" firstAttribute="top" secondItem="aMZ-lq-7mG" secondAttribute="top" id="U6m-Ls-1xS"/>
-                                <constraint firstAttribute="trailing" secondItem="eaN-gS-WVn" secondAttribute="trailing" id="W1Q-TO-Bww"/>
-                                <constraint firstAttribute="bottom" secondItem="eaN-gS-WVn" secondAttribute="bottom" id="g9x-w1-PA4"/>
-                                <constraint firstItem="eaN-gS-WVn" firstAttribute="leading" secondItem="aMZ-lq-7mG" secondAttribute="leading" id="iUg-EZ-L4s"/>
-                            </constraints>
-                        </view>
                     </navigationItem>
-                    <connections>
-                        <outlet property="languageTitleLabel" destination="eaN-gS-WVn" id="yDC-HO-u8Z"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nkx-TG-J1l" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
