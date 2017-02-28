@@ -1,0 +1,17 @@
+/* 
+  Localizable.strings
+  LanguageSelection
+
+  Created by NDM on 2/28/17.
+  Copyright © 2017 Rome Rock. All rights reserved.
+*/
+
+//Home View
+"CURRENT_LANG" = "ESPAÑOL";
+"LANGUAGE" = "IDIOMA";
+"USE_DEFAULT" = "Usar predeterminado del dispositivo";
+"SELECT_LANG" = "Seleccionar idioma";
+
+//pop up
+"POPUP_TITLE" = "Detectamos que tu dispositivo usa este idioma:";
+"CHANGE_LANG" = "Cambiar idioma";
