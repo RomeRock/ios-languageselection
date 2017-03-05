@@ -30,10 +30,10 @@ class HomeViewController: UIViewController, UIGestureRecognizerDelegate {
         }
         
         contentView.layer.shadowColor = UIColor.black.cgColor
-        contentView.layer.shadowOffset = CGSize(width: 0, height: 5)
+        contentView.layer.shadowOffset = CGSize(width: 0, height: 1)
         contentView.layer.shadowOpacity = 0.4
-        contentView.layer.shadowRadius = 3
-        contentView.layer.cornerRadius = 3
+        contentView.layer.shadowRadius = 0
+        contentView.layer.cornerRadius = 2
         
         setLanguage()
         

@@ -159,7 +159,7 @@
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </barButtonItem>
                         <view key="titleView" contentMode="scaleToFill" id="0FE-gd-bCK">
-                            <rect key="frame" x="56" y="6" width="263" height="33"/>
+                            <rect key="frame" x="56" y="5.5" width="263" height="33"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MM: Language Selection" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GVl-ry-bAl">
@@ -312,7 +312,7 @@
         <scene sceneID="smA-w3-ToM">
             <objects>
                 <navigationController id="N07-2X-E7L" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="E5T-PS-AwE">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="E5T-PS-AwE">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.090196078430000007" green="0.69019607839999997" blue="0.93725490199999995" alpha="1" colorSpace="calibratedRGB"/>
@@ -458,6 +458,17 @@
                                     <action selector="githubButtonPressed:" destination="FRc-WL-HWk" eventType="touchUpInside" id="k8o-mk-aAH"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qpc-Kx-tft">
+                                <rect key="frame" x="88" y="605" width="129" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="JOU-cE-pbk"/>
+                                    <constraint firstAttribute="width" constant="129" id="OG1-Zc-yIs"/>
+                                </constraints>
+                                <state key="normal" image="img_romerock_logo"/>
+                                <connections>
+                                    <action selector="romerockButtonPressed:" destination="FRc-WL-HWk" eventType="touchUpInside" id="GDw-56-jwc"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.1647058824" green="0.18823529410000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -469,6 +480,8 @@
                             <constraint firstItem="4Yy-9d-I6Q" firstAttribute="leading" secondItem="mjK-5u-iRd" secondAttribute="leading" constant="32" id="bnz-vK-ET0"/>
                             <constraint firstItem="4Yy-9d-I6Q" firstAttribute="top" secondItem="wvB-yZ-ncF" secondAttribute="bottom" constant="68" id="cqx-aa-Ags"/>
                             <constraint firstItem="4dX-vn-JPt" firstAttribute="centerY" secondItem="CDy-EN-0h1" secondAttribute="centerY" id="j2r-7H-gT1"/>
+                            <constraint firstItem="DLc-TO-pPZ" firstAttribute="top" secondItem="Qpc-Kx-tft" secondAttribute="bottom" constant="42" id="m5E-EN-yiL"/>
+                            <constraint firstItem="Qpc-Kx-tft" firstAttribute="leading" secondItem="mjK-5u-iRd" secondAttribute="leading" constant="88" id="qq8-2I-awo"/>
                             <constraint firstItem="CDy-EN-0h1" firstAttribute="width" secondItem="CDy-EN-0h1" secondAttribute="height" multiplier="1:1" id="x5L-rb-g4v"/>
                             <constraint firstItem="wvB-yZ-ncF" firstAttribute="top" secondItem="NsI-Dv-Lwd" secondAttribute="bottom" constant="67" id="zez-XL-m6A"/>
                         </constraints>
@@ -485,6 +498,7 @@
         <image name="ic_github" width="54" height="54"/>
         <image name="ic_menu" width="16" height="15"/>
         <image name="ic_twitter" width="54" height="54"/>
+        <image name="img_romerock_logo" width="130" height="20"/>
         <image name="img_romerock_logo_gray" width="99" height="16"/>
     </resources>
     <inferredMetricsTieBreakers>

@@ -381,6 +381,7 @@
 				5D0C97331E64F45400BFE448 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
